@@ -43,6 +43,10 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    //파이어 베이스
     implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
     implementation("com.google.firebase:firebase-analytics")
+
+    //네이버 지도
+    implementation("com.naver.maps:map-sdk:3.19.1")
 }
