@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:495253667769:android:761228ddfc030bb600c068",
+        "mobilesdk_app_id": "1:495253667769:android:2171285dc398ec1800c068",
         "android_client_info": {
-          "package_name": "com.ssu.MohaSSU"
+          "package_name": "com.example.mohassu"
         }
       },
       "oauth_client": [],
