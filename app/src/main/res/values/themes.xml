@@ -3,7 +3,8 @@
     <style name="Base.Theme.MohaSSU" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:fontFamily">@font/pretendardregular</item>
     </style>
-
-    <style name="Theme.MohaSSU" parent="Base.Theme.MohaSSU" />
+    <style name="Theme.MohaSSU" parent="Base.Theme.MohaSSU">
+    </style>
 </resources>
