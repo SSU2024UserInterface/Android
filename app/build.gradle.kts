@@ -1,5 +1,12 @@
+import java.util.Properties
+import java.io.FileInputStream
+
+// API 키 파일 로드
+val apikeyProperties = Properties().apply {
+    load(FileInputStream(rootProject.file("apikey.properties")))
+}
+
 plugins {
-//    alias(libs.plugins.android.application)
     id("com.android.application")
     id("com.google.gms.google-services")
 }
@@ -16,6 +23,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // manifestPlaceholders에 NAVER_MAPS_CLIENT_ID 설정
+        manifestPlaceholders["NAVER_MAPS_CLIENT_ID"] = apikeyProperties["NAVER_MAPS_CLIENT_ID"].toString()
     }
 
     buildTypes {
@@ -34,7 +44,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -43,6 +52,10 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    // Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
     implementation("com.google.firebase:firebase-analytics")
+
+    // Naver Maps
+    implementation("com.naver.maps:map-sdk:3.19.1")
 }
