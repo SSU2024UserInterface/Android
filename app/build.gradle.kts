@@ -58,4 +58,6 @@ dependencies {
 
     // Naver Maps
     implementation("com.naver.maps:map-sdk:3.19.1")
+
+    implementation ("com.github.tlaabs:TimetableView:1.0.3-fx1")
 }
