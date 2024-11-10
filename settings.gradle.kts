@@ -17,6 +17,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven("https://repository.map.naver.com/archive/maven") // 네이버 지도 리포지토리 추가
+        maven("https://jitpack.io") // JitPack 리포지토리 추가
     }
 }
 
