@@ -92,7 +92,6 @@
             android:background="@drawable/plus_profile_button"
             android:contentDescription="프로필 추가 버튼"
             />
-
     </FrameLayout>
 
 
@@ -125,7 +124,6 @@
             android:layout_weight="1"
             android:text="건너뛰기"
             android:backgroundTint="@android:color/darker_gray"
-            android:textColor="@android:color/white"
             style="@style/GrayMaterialButtonStyle"
             />
     </LinearLayout>
