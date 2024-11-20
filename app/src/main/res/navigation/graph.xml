@@ -12,12 +12,23 @@
         android:name="com.example.mohassu.fragment.StartFragment"
         android:label="StartFragment"
         tools:layout="@layout/fragment_start">
-<!--        <action-->
-<!--            android:id="@+id/btn_start_login"-->
-<!--            app:destination="@+id/Signup2Fragment"/>-->
+        <action
+            android:id="@+id/btn_start_login"
+            app:destination="@+id/LoginFragment"/>
         <action
             android:id="@+id/btn_start_signup"
             app:destination="@+id/Signup1Fragment"/>
+    </fragment>
+
+<!--로그인 화면-->
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.mohassu.fragment.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+<!--        <action-->
+<!--            android:id="@+id/btn_start_signup"-->
+<!--            app:destination="@+id/Signup1Fragment"/>-->
     </fragment>
 
 

@@ -26,9 +26,9 @@ public class Signup2Fragment extends Fragment {
         NavController navController = Navigation.findNavController(view);
 
         // EditText를 클릭 시 검색 Fragment로 이동
-        Button openBookSearchEditText = view.findViewById(R.id.btn_singup2_next);
-        openBookSearchEditText.setFocusable(false);
-        openBookSearchEditText.setOnClickListener(v -> {
+        Button signupNextButton = view.findViewById(R.id.btn_singup2_next);
+        signupNextButton.setFocusable(false);
+        signupNextButton.setOnClickListener(v -> {
             navController.navigate(R.id.btn_singup2_next);
         });
     }
