@@ -12,10 +12,10 @@ import androidx.navigation.Navigation;
 
 import com.example.mohassu.R;
 
-public class Signup2Fragment extends Fragment {
+public class StartFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_sign_up2, container, false);
+        return inflater.inflate(R.layout.fragment_start, container, false);
     }
 
     @Override
@@ -25,11 +25,20 @@ public class Signup2Fragment extends Fragment {
         // NavController 초기화
         NavController navController = Navigation.findNavController(view);
 
-        // EditText를 클릭 시 검색 Fragment로 이동
-        Button openBookSearchEditText = view.findViewById(R.id.btn_singup2_next);
-        openBookSearchEditText.setFocusable(false);
-        openBookSearchEditText.setOnClickListener(v -> {
-            navController.navigate(R.id.btn_singup2_next);
+        //Button를 클릭 시 검색 Fragment로 이동
+        Button loginButton = view.findViewById(R.id.btn_start_login);
+        Button singnButton = view.findViewById(R.id.btn_start_signup);
+
+        loginButton.setFocusable(false);
+        loginButton.setOnClickListener(v -> {
+            navController.navigate(R.id.btn_start_login);
+        });
+
+        singnButton.setFocusable(false);
+        singnButton.setOnClickListener(v -> {
+            navController.navigate(R.id.btn_start_signup);
         });
     }
+
+
 }
