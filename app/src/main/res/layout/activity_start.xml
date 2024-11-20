@@ -23,6 +23,7 @@
         android:src="@drawable/logoname" />
 
     <Button
+        android:id="@+id/btn_start_login"
         style="@style/BlueMaterialButtonStyle"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -33,6 +34,7 @@
         />
 
     <Button
+        android:id="@+id/btn_start_sign"
         style="@style/BlueMaterialButtonStyle"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
