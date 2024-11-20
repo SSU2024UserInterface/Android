@@ -1,10 +1,13 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp">
 
     <!-- 상단 Back 버튼과 제목 -->
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -14,21 +17,22 @@
             android:id="@+id/btnBack"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="?selectableItemBackground"
             android:src="@drawable/ic_back"
             android:contentDescription="뒤로가기 버튼"
-            android:foregroundTint="@color/gray" />
+            android:textStyle="bold"
+            android:background="?selectableItemBackground"
+            android:foregroundTint="@color/black" />
 
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="모하SSU 로그인"
+            android:layout_gravity="center"
+            android:text="모하SSU 회원가입"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_marginStart="8dp"
             android:textColor="@color/black" />
-    </LinearLayout>
+    </FrameLayout>
 
     <!-- 구분선: Toolbar 아래에 배치 -->
     <View
